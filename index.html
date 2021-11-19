@@ -26,7 +26,7 @@
              gesture-detector>
 
         <!-- define a marker to detect the 3d object-->
-        <a-marker-camera preset='custom' type='pattern' url='https://raw.githubusercontent.com/githubmehul/westerhout_audio_model/main/Pattern/pattern-Westerhout.patt'>
+        <a-marker preset='custom' type='pattern' url='https://raw.githubusercontent.com/githubmehul/westerhout_audio_model/main/Pattern/pattern-Westerhout.patt'>
 
 		<a-entity gltf-model="https://raw.githubusercontent.com/githubmehul/Augmented-Reality-Implementation/main/Sheath%203D%20model/sheath.gltf"
 				  scale="0.4 0.4 0.4"
@@ -41,7 +41,8 @@
 				  rotation="-90 0 0"
                   class="clickable"
                   gesture-handler
-                  ></a-entity>
+                  ></a-entity></a-marker>
+	    		<a-entity camera></a-entity>
         <div class="wrapper" id="app">
             <div class="player">
                 <div class="player__top">
@@ -195,7 +196,7 @@
                 </symbol>
             </defs>
         </svg>
-	</a-scene></a-marker-camera>
+	</a-scene>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
         <script src="script.js"></script> <!--connect to javascript-->
 
